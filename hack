@@ -15,9 +15,9 @@ def main():
     if elevate_privileges(): sys.exit(1)
 
     # Sync the script with Github version
-    print_message("green", "Syncing 'update-kali' script")
+    print_message("green", "Syncing 'hackonubuntu' script")
     script_git_status = subprocess.Popen(["git", "-C", os.path.dirname(os.path.realpath(__file__)),
-                                          "pull", "origin", "main"], stdout=subprocess.PIPE)
+                                          "pull", "origin", "master"], stdout=subprocess.PIPE)
     script_git_status_output = script_git_status.communicate()[0]
     if "Already up to date" not in script_git_status_output.decode():
         print_message("red", "Script Updated. Please run the new version.\n")
