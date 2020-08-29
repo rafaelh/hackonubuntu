@@ -1,13 +1,13 @@
 # hackonubuntu
-Scripts to set up Kali Linux with additional tools, and maintain them.
+I use [update-kali|https://github.com/rafaelh/update-kali] boxes, so it makes sense to start on a similar tool for ubuntu now that I'm using it. Ubuntu makes for a great hardware management base, and it's pretty straight forward to get most hacking tools onto it. Many tools like `gobuster` are available in Ubuntu's apt repositories, but they lag considerably, so my preference is to pull these direct from the source where possible.
 
-## What is this?
-I find that I need to keep a lot of Kali linux installations up to date, and I like them to be setup in a similar format. This script installs the tools I'm likely to use, creates directories, etc. Currently it's set up for my personal use, but with a little modification you can use it too:
+## How do you use this?
+This script installs the tools I'm likely to use, creates directories, etc. Currently it's set up for my personal use, but with a little modification you can use it too:
 
 * Fork the repo so that you can commit changes to `config.py`, and so the script updates from the right place
 * Update `config.py` with your preferences
 * Go through `/scripts/` and delete the ones you don't want - they should be self-explanatory.
-* Make sure you have the following installed: `python3`, `python-apt` and `git`.
+* Make sure you have the following installed: `python3`, `python3-apt` and `git`.
 
 ## Config
 The default config can be found in `config.py`. You should updated it to match what you want, otherwise you'll have my preferences used. This script will:

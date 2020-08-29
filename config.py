@@ -1,14 +1,17 @@
 import os
 
-''' This file defines what the update-kali script should do. '''
+''' This file defines what the hackonubuntu script should do. '''
+
+# TODO:
+# amass
+
 
 # These directories will be removed from your home directory
 directories_to_remove = ['Documents', 'Music', 'Pictures', 'Public', 'Templates', 'Videos']
 
 # These kali packages will be installed
-packages_to_install = ['most', 'ttf-mscorefonts-installer', 'pydf', 'htop', 'gobuster', 'amass',
-                       'golang', 'exif', 'hexedit', 'jq', 'python3-pip', 'python3-venv',
-                       'apt-transport-https', 'curl', 'filezilla', 'meld',
+packages_to_install = ['most', 'ttf-mscorefonts-installer', 'pydf', 'htop', 'golang', 'exif', 'hexedit', 'jq', 'python3-pip', 
+                       'python3-venv', 'apt-transport-https', 'curl', 'filezilla', 'meld',
                        'net-tools', 'tmux']
 
 # These kali packages will be removed
@@ -24,16 +27,11 @@ pip_packages = ['pipenv', 'pylint', 'dnsgen']
 # export GOPATH=$HOME/go
 # export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 golang_modules_to_install = [
-                            'github.com/tomnomnom/assetfinder',
+                            'https://github.com/OJ/gobuster',
                             'github.com/projectdiscovery/subfinder/cmd/subfinder',
                             'github.com/lc/gau',
-                            'github.com/theblackturtle/wildcheck',
-                            'github.com/tomnomnom/httprobe',
                             'github.com/hakluke/hakrawler',
-                            'github.com/tomnomnom/qsreplace',
                             'github.com/hahwul/dalfox',
-                            'github.com/ffuf/ffuf',
-                            'github.com/dwisiswant0/hinject'
                             ]
 
 # These git repositories will be synced to the 'external repo' directory
