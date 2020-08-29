@@ -18,7 +18,7 @@ packages_to_remove = []
 
 # These kali packages will be installed
 packages_to_install = ['most', 'ttf-mscorefonts-installer', 'pydf', 'htop', 'golang', 'exif', 'hexedit', 'jq', 'python3-pip', 
-                       'python3-venv', 'apt-transport-https', 'curl', 'filezilla', 'meld',
+                       'python3-venv', 'python3-shodan', 'apt-transport-https', 'curl', 'filezilla', 'meld',
                        'net-tools', 'tmux']
 
 # These python packages will be installed globally
