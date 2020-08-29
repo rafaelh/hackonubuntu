@@ -31,7 +31,7 @@ pip_packages = ['pipenv', 'pylint']
 # export GOPATH=$HOME/go
 # export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 golang_modules_to_install = [
-                            'https://github.com/OJ/gobuster',
+                            'github.com/OJ/gobuster',
                             'github.com/projectdiscovery/subfinder/cmd/subfinder',
                             'github.com/lc/gau',
                             'github.com/hakluke/hakrawler',
