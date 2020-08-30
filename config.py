@@ -4,7 +4,7 @@ import os
 
 # TODO:
 # amass
-# sudo snap install john-the-ripper
+# sudo snap install john-the-ripper --devmode
 
 # === Stuff to Remove ===
 
